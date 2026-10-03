@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "devday-pulse",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "goalEvent": "brief_created",
+  "hypothesis": "Can a first-time attendee turn an agent job into a useful experiment brief without assistance?",
+  "audience": "OKX Dev Day attendees; controlled rehearsal before public use",
+  "mode": "demo",
+  "dataNotice": "Deterministic local experience. No GPT calls, wallets, checkout, real payments or aggregate community totals. Tracking and feedback are separate optional choices.",
+  "eventDefinitions": [
+    {"name":"mission_started","description":"The attendee clicks to start; intent only."},
+    {"name":"problem_selected","description":"A valid agent job and audience selection is submitted."},
+    {"name":"brief_created","description":"A valid selection produces an experiment card. Count every successful generation."},
+    {"name":"price_signal_submitted","description":"A non-binding price preference is confirmed, including free. Not a payment or sale."},
+    {"name":"brief_copied","description":"The browser Clipboard API successfully writes the brief."},
+    {"name":"brief_exported","description":"The attendee requests the JSON download. Download completion is not proven."}
+  ],
+  "configurationNotice": "Advisory metadata only; copy these definitions into the approved LaunchLab collection plan. This file is not automatically imported by LaunchLab."
+}
