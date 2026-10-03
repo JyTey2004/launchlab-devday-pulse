@@ -12,6 +12,7 @@ Public repo: https://github.com/JyTey2004/launchlab-devday-pulse
 Source: resolve the commit and show it before preparing the task; use the exact approved SHA throughout.
 App folder: repository root
 Framework: Vite; npm; Node 22.12+; build npm run build; output dist; no required secrets or backend.
+Hosting request: LaunchLab's existing managed AWS CodeBuild/Amplify static adapter. The general repository inspector may suggest an advisory Vercel recipe; do not treat that as an implemented hosting adapter or select it for this run.
 Question: Can a first-time attendee create a useful agent-service experiment brief without assistance?
 Audience: OKX Dev Day attendees. First run is a controlled internal rehearsal, not organic customer evidence.
 

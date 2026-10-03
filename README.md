@@ -29,6 +29,8 @@ The managed preview is password-protected by default. A public GitHub repo does 
 
 `launchlab.experiment.json` is advisory documentation. LaunchLab does **not** automatically import its event definitions. Include the definitions explicitly in the service request and review the collection plan before deployment.
 
+The general repository inspector can suggest a Vercel recipe. That recipe is advisory and its adapter is not implemented. For this rehearsal, explicitly request LaunchLab's existing managed AWS CodeBuild/Amplify static adapter. Framework detection alone does not approve or start hosting.
+
 For a manual Amplify deployment, connect this repository through the Amplify console, use the root app and included build settings, review the account and charges, then deploy. That is an alternative manual hosting route; it does not test the OKX agent handoff or install LaunchLab's hosted collector. No deployment is performed by this repository itself.
 
 ## What to validate
